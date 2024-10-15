@@ -1,0 +1,6 @@
+gcloud functions deploy transferFile \
+    --runtime python311 \
+    --trigger-resource jethro123a \
+    --trigger-event google.storage.object.finalize \
+    --entry-point transfer_file \
+    --region YOUR_REGION
